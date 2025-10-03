@@ -19,4 +19,7 @@ method.
 
 Then start describing your problem by typing in the terminal window.
 
-24: A HashMap
+24: A HashMap is a reiteration of a Map and an ArrayList that is used to save and view specific things in a
+saved list and to have an easier time drawing from them. It can be used to contain a collection of
+Maps and has a capacity limit that causes it to stop working if the HashMap contains too much.
+25: 

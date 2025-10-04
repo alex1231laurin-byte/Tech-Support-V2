@@ -22,4 +22,8 @@ Then start describing your problem by typing in the terminal window.
 24: A HashMap is a reiteration of a Map and an ArrayList that is used to save and view specific things in a
 saved list and to have an easier time drawing from them. It can be used to contain a collection of
 Maps and has a capacity limit that causes it to stop working if the HashMap contains too much.
-25: 
+25: It uses an intenger and a float as its parameter. The methods that use it are containsKey, 
+containsValue, size, values, entrySet and keySet. I do not think the same type could be used for both of its
+parameters.
+26: You either use size() or values().
+27: 

@@ -1,0 +1,39 @@
+import java.util.HashMap;
+
+/**
+ * Décrivez votre classe MapTester ici.
+ *
+ * @author (votre nom)
+ * @version (un numéro de version ou une date)
+ */
+public class MapTester
+{
+    // variables d'instance - remplacez l'exemple qui suit par le vôtre
+    private HashMap<String, String> books;
+
+    /**
+     * Constructeur d'objets de classe MapTester
+     */
+    public MapTester()
+    {
+        // initialisation des variables d'instance
+        this.books = new HashMap<>();
+    }
+
+    /**
+     * Un exemple de méthode - remplacez ce commentaire par le vôtre
+     *
+     * @param  y   le paramètre de la méthode
+     * @return     la somme de x et de y
+     */
+    public void enterNumber(String name, String number)
+    {
+        // Insérez votre code ici
+        books.put(name, number);
+    }
+    public String lookupNumber(String name){
+        return books.get(name);
+        //String number = books.get(name);
+        //return number;
+    }
+}

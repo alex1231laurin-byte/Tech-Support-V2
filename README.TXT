@@ -28,3 +28,7 @@ parameters.
 26: You either use size() or values().
 28: It overrides the previous key with the new key.
 29: It adds a new key with a new value.
+30: You use containsKey(Object key).
+31: It returns null.
+32: You use a for loop that uses keySet to prevent repeating previous keys, then put print inside the for loop.
+33:

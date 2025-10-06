@@ -1,4 +1,3 @@
-import java.util.Scanner;
 import java.util.HashSet;
 
 /**
@@ -32,12 +31,17 @@ public class InputReader
      *
      * @return  A String typed by the user.
      */
-    public String getInput()
+    public HashSet<String> getInput()
     {
         // print prompt
         System.out.print("> ");         
-        String inputLine = reader.nextLine();
-
-        return inputLine;
+        String inputLine = reader.nextLine().trim().toLowerCase();
+        
+        String[] wordArray = inputLine.split(" ");
+        HashSet<String> words = new HashSet<>();
+        for(String word : wordArray){
+            words.add(word);
+        }
+        return words;
     }
 }

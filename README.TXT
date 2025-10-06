@@ -26,4 +26,5 @@ Maps and has a capacity limit that causes it to stop working if the HashMap cont
 containsValue, size, values, entrySet and keySet. I do not think the same type could be used for both of its
 parameters.
 26: You either use size() or values().
-27: 
+28: It overrides the previous key with the new key.
+29: It adds a new key with a new value.

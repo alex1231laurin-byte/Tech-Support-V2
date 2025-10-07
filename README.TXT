@@ -40,7 +40,7 @@ with the amount of space inbetween words gets reduced to 1.
 44: public void printWordCounts(){
         Set<String> words = counts.keySet();
         for(String word : words){
-            System.out.println(word + ": " + counts.get(words));
+            System.out.println(word + ": " + counts.get(word));
         }
     }
 45: public void printResponseMapKeys(){

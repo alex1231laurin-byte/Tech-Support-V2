@@ -37,15 +37,10 @@ parameters.
 if the String originally contained 1 String, you have to call it the exact same way or code a way to create a copy of the String
 with the amount of space inbetween words gets reduced to 1.
 43: It puts a key with the given value into the HashMap if there are no similar keys.
-44: public void addWords(HashSet<String> input)
-    {
-        for(String word : input) {
-            int counter = counts.getOrDefault(word, 0);
-            counts.put(word, counter + 1);
-                if( word == "bye"){
-                System.out.println(counts.keySet());
-                System.out.println(counts.values());
-            }
+44: public void printWordCounts(){
+        Set<String> words = counts.keySet();
+        for(String word : words){
+            System.out.println(word + ": " + counts.get(words));
         }
     }
 45: public void printResponseMapKeys(){

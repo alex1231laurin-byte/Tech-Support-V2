@@ -33,7 +33,9 @@ parameters.
 32: You use a for loop that uses keySet to prevent repeating previous keys, then put print inside the for loop.
 34: Both contain a list or set of objects, including but not limited to: Strings.
 35: A HashSet returns a value while the ArrayList returns an element.
-36: There are no problems with having more than one space between two words because it gets included inside the String.
+36: There are no problems with having more than one space between two words because it gets included inside the String. However,
+if the String originally contained 1 String, you have to call it the exact same way or code a way to create a copy of the String
+with the amount of space inbetween words gets reduced to 1.
 43: It puts a key with the given value into the HashMap if there are no similar keys.
 44: public void addWords(HashSet<String> input)
     {

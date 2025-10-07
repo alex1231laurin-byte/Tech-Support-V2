@@ -21,9 +21,6 @@ public class InputReader
     {
         HashSet<String> wordSet = new HashSet<>();
         reader = new Scanner(System.in);
-        wordSet.add("one");
-        wordSet.add("two");
-        wordSet.add("three");
     }
 
     /**

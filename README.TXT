@@ -34,3 +34,23 @@ parameters.
 34: Both contain a list or set of objects, including but not limited to: Strings.
 35: A HashSet returns a value while the ArrayList returns an element.
 36: There are no problems with having more than one space between two words because it gets included inside the String.
+43: It puts a key with the given value into the HashMap if there are no similar keys.
+44: public void addWords(HashSet<String> input)
+    {
+        for(String word : input) {
+            int counter = counts.getOrDefault(word, 0);
+            counts.put(word, counter + 1);
+                if( word == "bye"){
+                System.out.println(counts.keySet());
+                System.out.println(counts.values());
+            }
+        }
+    }
+45: public void printResponseMapKeys(){
+        System.out.println(responseMap.keySet());
+    }
+46: It is accurate, but it doesn't explain what code did I use.
+47: They influence the formatting of the document by changing lines and adding extra information.
+48: /** starts a comment, */ end the comment, @tag will put a tag before the text, but can only be placed after the leading
+asterisks, {@tag} can be place anywhere that text is allowed and certain tags do special things. For example, the @author
+tag adds an "Author entry with the specified name-text tot he generated docs when the -author option is used.

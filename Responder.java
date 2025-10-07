@@ -6,8 +6,8 @@ import java.util.HashSet;
 /**
  * The responder class represents a response generator object. It is used
  * to generate an automatic response. This is the second version of this 
- * class. This time, we generate some random behavior by randomly selecting 
- * a phrase from a predefined list of responses.
+ * class. This time, we generate some behavior by selecting 
+ * a phrase from a predefined list of responses with HashMaps.
  * 
  * @author   Michael Kölling and David J. Barnes
  * @version 7.2
@@ -19,7 +19,7 @@ public class Responder
     private HashMap<String, String> responsesMap;
 
     /**
-     * Construct a Responder
+     * Constructs a Responder and fill it with responses.
      */
     public Responder()
     {
@@ -32,7 +32,9 @@ public class Responder
     
     /**
      * Generate a response.
-     * 
+     * Response generated is dependant on the answer given from the InputReader.
+     * If the answer given from the InputReader does not include an answer that the list recognises, 
+     * Responder returns a default response.
      * @return  A string that should be displayed as the response
      */
     public String generateResponseFromHashSet(HashSet<String> words){
@@ -45,7 +47,9 @@ public class Responder
         return pickDefaultResponse();
     }
     
-    
+    /**
+     * Return a default response when there are no words that match on the list.
+     */
     private String pickDefaultResponse(){
         return "This is the default response.";
     }
@@ -104,4 +108,3 @@ public class Responder
         responsesMap.put("online","I just checked StackOverflow - they don't know either.");
     }
 }
-

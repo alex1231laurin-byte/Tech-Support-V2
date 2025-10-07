@@ -19,7 +19,7 @@ public class SupportSystem
     private Responder responder;
     
     /**
-     * Creates a technical support system.
+     * Creates a technical support system that includes the Responder and InputReader.
      */
     public SupportSystem()
     {
@@ -72,3 +72,4 @@ public class SupportSystem
         System.out.println("Nice talking to you. Bye...");
     }
 }
+

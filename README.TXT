@@ -31,4 +31,6 @@ parameters.
 30: You use containsKey(Object key).
 31: It returns null.
 32: You use a for loop that uses keySet to prevent repeating previous keys, then put print inside the for loop.
-33:
+34: Both contain a list or set of objects, including but not limited to: Strings.
+35: A HashSet returns a value while the ArrayList returns an element.
+36: There are no problems with having more than one space between two words because it gets included inside the String.

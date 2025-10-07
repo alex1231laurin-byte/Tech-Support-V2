@@ -27,6 +27,7 @@ public class Responder
         responses = new ArrayList<>();
         responsesMap = new HashMap<>();
         fillResponses();
+        fillResponsesMap();
     }
     
     /**
@@ -36,7 +37,7 @@ public class Responder
      */
     public String generateResponseFromHashSet(HashSet<String> words){
         for (String word : words) {
-             String answer = responsesMap.get(words);
+             String answer = responsesMap.get(word);
             if(answer!=null){
                 return answer;
             } 
